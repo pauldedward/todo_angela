@@ -11,7 +11,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect('mongodb+srv://admin-user:abcd1234@cluster0.hyqg9.mongodb.net/todolistDB', {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
+mongoose.connect('mongodb+srv://<username>:<password>@cluster0.hyqg9.mongodb.net/<dbname>', {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
 
 const itemScema = {
     name:{
